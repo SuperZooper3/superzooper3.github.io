@@ -6,7 +6,16 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
-    {% include navigation.html %}
-    {{ content }}
+    <header>
+        <h1 class="title-name">Yap Yap</h1>
+        {% include navigation.html %}
+    </header>
+    <body>    
+        <main>
+            <div class="container">
+                {{ content }}
+            </div>
+        </main>
+    </body>
   </body>
 </html>
