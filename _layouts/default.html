@@ -7,7 +7,11 @@
   </head>
   <body>
     <header>
-        <h1 class="title-name"><a href="/" class="hidden-link">{{ page.title }}</a></h1>
+        <h1 class="title-name">
+          <a href="{{ page.backlink }}" class="hidden-link">
+            {{ page.title }}
+          </a>
+        </h1>        
         {% include navigation.html %}
     </header>
     <main>

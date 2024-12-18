@@ -1,7 +1,9 @@
 ---
 layout: article
 title: Test
-tag: programming
+tag: media
+backlink: /media.html
+image_url: /assets/img/image.png
 ---
 
 ```python

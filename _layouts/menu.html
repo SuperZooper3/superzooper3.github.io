@@ -1,13 +1,15 @@
 ---
 layout: default
 title: {{ page.title }}
+backlink: {{ page.backlink }}
 ---
 <section>
   <p class="menu-preface">{{ content }}</p>
 </section>
 <section>
   <ul class="project-grid">
-      {% for project in site.projects %}
+      {% assign sorted_projects = site.projects | sort: 'sortNumber' | reverse %}
+      {% for project in sorted_projects %}
         {% if page.filter_tag == project.tag %}
           <li class="project-item">
             <a href="{{ project.url }}">
