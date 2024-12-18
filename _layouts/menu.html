@@ -1,0 +1,13 @@
+---
+layout: default
+title: {{ page.title }}
+---
+<ul>
+    {% for project in site.projects %}
+      {% if page.filter_tag == project.tag %}
+        <li>
+          <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
+        </li>
+      {% endif %}
+    {% endfor %}
+</ul>

@@ -7,15 +7,13 @@
   </head>
   <body>
     <header>
-        <h1 class="title-name">Yap Yap</h1>
+        <h1 class="title-name"><a href="/" class="hidden-link">{{ page.title }}</a></h1>
         {% include navigation.html %}
     </header>
-    <body>    
-        <main>
-            <div class="container">
-                {{ content }}
-            </div>
-        </main>
-    </body>
+    <main>
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
   </body>
 </html>

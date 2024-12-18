@@ -1,7 +1,7 @@
 ---
-short_name: tst
-name: The Test
-position: Yapper
+layout: default
+title: Test
+tag: programming
 ---
 
 ```python

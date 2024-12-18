@@ -1,4 +1,8 @@
-- name: Homerss           
+- name: Home           
   link: /
-- name: About
-  link: /about.html
+- name: Programming
+  link: /programming.html
+- name: Multimedia
+  link: /media.html
+- name: Other
+  link: /other.html
