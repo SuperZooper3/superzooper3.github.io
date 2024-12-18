@@ -4,7 +4,7 @@ title: Snowfake
 tag: programming
 image_url: /assets/img/projects/snowfake/snowfake.png
 backlink: /programming.html
-sortNumber: 2
+sortNumber: 11
 ---
 
 Snowfake (also sometimes known as Game of Hex) is a hexagonal [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) *like* [cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton).

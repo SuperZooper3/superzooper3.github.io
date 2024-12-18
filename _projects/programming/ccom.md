@@ -4,7 +4,7 @@ title: Restreaming Tech Package
 tag: programming
 image_url: /assets/img/projects/ccom/bingo.png
 backlink: /programming.html
-sortNumber: 3
+sortNumber: 12
 ---
 
 I've worked extensively with the [Celeste Community](https://www.twitch.tv/celestecommunity) as both an event organizer and the lead developer of our restreaming tech package from 2022 to 2023.

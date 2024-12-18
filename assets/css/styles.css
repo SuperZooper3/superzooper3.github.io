@@ -169,7 +169,8 @@ section {
 .article-container img {
     border-radius: 8px;
     max-height: 315px;
-    max-width: 400px;
+    max-width: 440px;
+    height: auto;
 }
 
 .project-grid {
@@ -228,4 +229,12 @@ section {
     /* align the items in it horizontally */
     height: 50px;
     border-radius: 5px;
+}
+
+ul {
+    padding-left: 20px; /* Adds space for the bullets */
+}
+
+li {
+    margin-left: 0; /* Ensures the text aligns correctly with the bullets */
 }

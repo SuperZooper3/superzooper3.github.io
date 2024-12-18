@@ -7,7 +7,7 @@ title: GrowyGardens
 image_url: /assets/img/projects/growy.png
 ---
 
-GrowyGardens was a game I made with two friends at the [Nuit du C0de 2022](https://www.nuitducode.net/) Hackathons for highschool students.
+GrowyGardens was a game I made with two friends at the [Nuit du C0de 2022](https://www.nuitducode.net/) Hackathons for high school students.
 
 We made the game in 6 hours with all of our own ideas, programming, and art. It's built on top of the pyxel game engine and is programmed in python.
 
