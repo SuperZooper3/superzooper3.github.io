@@ -2,12 +2,20 @@
 layout: default
 title: {{ page.title }}
 ---
-<ul>
-    {% for project in site.projects %}
-      {% if page.filter_tag == project.tag %}
-        <li>
-          <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
-        </li>
-      {% endif %}
-    {% endfor %}
-</ul>
+<section>
+  <p class="menu-preface">{{ content }}</p>
+</section>
+<section>
+  <ul class="project-grid">
+      {% for project in site.projects %}
+        {% if page.filter_tag == project.tag %}
+          <li class="project-item">
+            <a href="{{ project.url }}">
+              <img src="{{ project.image_url }}" alt="{{ project.name }}">
+              <h2>{{ project.title }}</h2>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+  </ul>
+</section>

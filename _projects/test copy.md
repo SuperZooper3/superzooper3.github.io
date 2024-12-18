@@ -2,7 +2,6 @@
 layout: article
 title: Test
 tag: programming
-image_url: /assets/img/image.png
 ---
 
 ```python

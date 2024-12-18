@@ -1,8 +1,7 @@
 ---
 layout: article
-title: Test
+title: Test diwjoadjowajdoi wjaiod wjaio jdiwoa jdoiwa jwado jdwao idjwa
 tag: programming
-image_url: /assets/img/image.png
 ---
 
 ```python

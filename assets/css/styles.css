@@ -74,7 +74,7 @@ section {
     justify-content: space-between; /* Add space between the left and right columns */
     align-items: flex-start; /* Align content at the top */
     gap: 20px; /* Add spacing between columns */
-    margin: 20px 0; /* Add vertical spacing between sections */
+    margin: 10x 0; /* Add vertical spacing between sections */
     width: 100%; /* Ensure sections take the full width of the container */
 }
 
@@ -161,4 +161,45 @@ section {
 /* for Uls in a profiles container, padd them by 16px more */
 .profiles-container ul {
     padding-left: 16px;
+}
+
+.article-container {
+}
+
+.article-container img {
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Ensure the grid container takes full width */
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-item img {
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-item h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.menu-preface {
+    text-align: center;
+    flex: 1 1;
 }
