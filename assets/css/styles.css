@@ -203,3 +203,24 @@ section {
     text-align: center;
     flex: 1 1;
 }
+
+.experience-item {
+    margin: 15px 0;
+}
+
+.experience-item h2 {
+    margin: 10px 0;
+}
+
+.experience-title {
+    /* align the items in it horizontally */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.experience-title img {
+    /* align the items in it horizontally */
+    height: 50px;
+    border-radius: 5px;
+}
