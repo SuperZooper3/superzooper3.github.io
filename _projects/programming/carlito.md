@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Project Carlito, Tech3Lab
+title: Project Carlito - Tech3Lab
 tag: programming
 image_url: /assets/img/projects/carlito/cue2.png
 backlink: /programming.html

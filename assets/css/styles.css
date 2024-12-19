@@ -12,7 +12,7 @@
     border-bottom: 1px solid #464646;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 3.5em;
-    line-height: .7em;
+    line-height: 0.9em; /* Adjust line height for better spacing */
     margin-top: .15em;
 }
 
