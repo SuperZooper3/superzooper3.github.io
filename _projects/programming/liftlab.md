@@ -2,7 +2,7 @@
 layout: article
 tag: programming
 backlink: /programming.html
-sortNumber: 20
+sortNumber: 25
 title: LiftLab
 image_url: /assets/img/projects/liftlab.png
 ---

@@ -17,6 +17,6 @@ By providing 24/7 support, Goose Guide Bot transformed how hackers accessed even
 
 ![A screenshot of Goose Guide Bot in action!](/assets/img/projects/ggb/ggb.png)
 
-*Goose Guide Bot is open-source on [GitHub](https://github.com/hackthenorth/goose-guide-bot), I also made a [full course](https://youtu.be/4VubbpLFcO4) on how I made it and a [technical deep dive](https://youtu.be/vUYrXhJeRyY).*
+*Goose Guide Bot is open-source on [GitHub](https://github.com/hackthenorth/goose-guide-bot), I also made a [full course](https://youtu.be/4VubbpLFcO4) on how I made it and a [technical deep dive](https://youtu.be/vUYrXhJeRyY). I also wrote a blog post about it [here](https://hackthenorth.medium.com/building-hack-the-norths-ai-goose-guide-bot-9c266ad2f808).*
 
 ![A screenshot of Goose Guide Bot in action!](/assets/img/projects/ggb/ggb_video.jpg)
