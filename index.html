@@ -13,7 +13,31 @@ title: Alex Aumais
         <h2>I'm an enthusiastic and creative software engineer!</h2>
         <p>I study Software Engineering at the University of Waterloo, and in the past have worked on everything from AI agents to broadcasting software, and filmmaking to running Canada's largest hackathon! 
             I'm really passionate about quality engineering, creative work, leadership, and making products that delight people while <b>teaching</b> them things!</p>
-        <p>This portfolio exists to share all the projects I've been working on, and especially as an index of my filmmaking work. My experience section also includes links to some of my engineeringblog posts!</p>
+        <p>This portfolio exists to share all the projects I've been working on, and especially as an index of my filmmaking work. My experience section also includes links to some of my engineering blog posts!</p>
+    </div>
+</section>
+
+<!-- Insert new section here -->
+<section>
+    <div class="left-column">
+        <h2 class="right-align-header">Featured Programming Projects</h2>
+        <p class="right-align-header">
+            <a href="/programming.html">More Projects</a>
+        </p>
+    </div>
+
+    <div class="right-column">
+        <ul class="project-grid">
+            {% assign programming_projects = site.projects | where: 'tag', 'programming' | sort: 'sortNumber' | reverse %}
+            {% for project in programming_projects limit:3 %}
+            <li class="project-item">
+                <a href="{{ project.url }}">
+                    <img src="{{ project.image_url }}" alt="{{ project.title }}">
+                    <h2>{{ project.title }}</h2>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 </section>
 
