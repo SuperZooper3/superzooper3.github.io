@@ -1,11 +1,97 @@
 <!doctype html>
-<html>
+<html lang="{{ site.lang | default: 'en' }}">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }} - Alex Aumais</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <meta name="description" content="{{ page.title }} - Alex Aumais' portfolio website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% assign page_title = page.title | append: ' - ' | append: site.title %}
+    {% if page.title == site.title or page.title == 'Alex Aumais' %}
+      {% assign page_title = site.title %}
+    {% endif %}
+    
+    <title>{{ page_title }}</title>
+    
+    {% if page.description %}
+      {% assign meta_description = page.description %}
+    {% elsif page.excerpt %}
+      {% assign meta_description = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
+    {% else %}
+      {% assign meta_description = site.description %}
+    {% endif %}
+    
+    <meta name="description" content="{{ meta_description }}">
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Programming, Filmmaking, AI Agents{% endif %}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}">
+    <meta property="og:title" content="{{ page_title }}">
+    <meta property="og:description" content="{{ meta_description }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{% if page.image_url %}{{ page.image_url }}{% else %}/assets/img/headshot.png{% endif %}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}">
+    <meta name="twitter:title" content="{{ page_title }}">
+    <meta name="twitter:description" content="{{ meta_description }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{% if page.image_url %}{{ page.image_url }}{% else %}/assets/img/headshot.png{% endif %}">
+    {% if site.author.twitter %}
+    <meta name="twitter:creator" content="@{{ site.author.twitter }}">
+    {% endif %}
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/img/aa_icon.png">
+    <link rel="apple-touch-icon" href="/assets/img/aa_icon.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "{% if page.layout == 'article' %}Article{% else %}Person{% endif %}",
+      {% if page.layout == 'article' %}
+      "headline": "{{ page.title }}",
+      "description": "{{ meta_description }}",
+      "image": "{{ site.url }}{{ site.baseurl }}{% if page.image_url %}{{ page.image_url }}{% else %}/assets/img/headshot.png{% endif %}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.author.name }}"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "{{ site.author.name }}"
+      },
+      "datePublished": "{{ page.date | default: site.time | date: '%Y-%m-%d' }}",
+      "dateModified": "{{ page.date | default: site.time | date: '%Y-%m-%d' }}",
+      {% else %}
+      "name": "{{ site.author.name }}",
+      "url": "{{ site.url }}{{ site.baseurl }}",
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/img/headshot.png",
+      "jobTitle": "Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "University of Waterloo"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/{{ site.author.linkedin }}/",
+        "https://github.com/{{ site.author.github }}",
+        "https://www.youtube.com/@alexauma"
+      ],
+      "description": "{{ meta_description }}",
+      {% endif %}
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}"
+      }
+    }
+    </script>
   </head>
   <body>
     <header>

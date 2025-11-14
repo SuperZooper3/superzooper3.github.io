@@ -1,3 +1,21 @@
+# Site Configuration
+title: Alex Aumais - Software Engineer & Creative Developer
+description: Portfolio of Alex Aumais, Software Engineering student at University of Waterloo. Projects in programming, filmmaking, AI agents, and more.
+url: https://superzooper3.github.io
+baseurl: ""
+
+# Author Information
+author:
+  name: Alex Aumais
+  email: # Add your email if desired
+  twitter: alexauma
+  github: SuperZooper3
+  linkedin: alex-aumais
+
+# SEO
+lang: en
+timezone: America/Toronto
+
 collections:
   projects:
     output: true
