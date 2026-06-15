@@ -1,0 +1,22 @@
+---
+layout: article
+title: Cursor on the Go
+tag: programming
+image_url: /assets/img/projects/cursor-on-the-go/cursor-on-the-go-thumb.png
+backlink: /programming.html
+description: A HackUTD 2025 project that lets you prompt Cursor remotely from a phone or browser using WebSockets.
+sortNumber: 27
+---
+
+<p><strong>Cursor on the Go</strong> is a playful HackUTD 2025 project for keeping a Cursor coding session moving from your phone or browser.</p>
+
+<p>The app connects remotely to a Cursor instance, sends prompts, streams responses back in real time, and keeps everything synced so you can return to the desktop session without losing the thread. It also explored notifications, account management, and a tiny Stripe-powered upgrade flow because every serious fake startup needs a pricing page.</p>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JSDZqCcWaCc" title="Cursor on the Go! - Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<img src="/assets/img/projects/cursor-on-the-go/cursor-on-the-go.png" height="315" alt="Cursor on the Go running on a phone beside a laptop"/>
+<img src="/assets/img/projects/cursor-on-the-go/cursor-on-the-go-thumb.png" height="315" alt="Cursor on the Go thumbnail"/>
+
+<p>The core system used an injected JavaScript payload inside Cursor, a WebSocket relay backend, and a web/mobile frontend that could send and receive prompts. It was a fun exercise in integrating with a tool that was not exactly designed for remote control.</p>
+
+<p><i>See it on <a href="https://devpost.com/software/goon-cursor">Devpost</a>, watch the <a href="https://youtu.be/JSDZqCcWaCc">demo on YouTube</a>, and find the source code on <a href="https://github.com/iankorovinsky/cursormobile">GitHub</a>.</i></p>

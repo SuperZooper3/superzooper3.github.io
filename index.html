@@ -2,7 +2,7 @@
 layout: default
 title: Alex Aumais
 description: Software Engineering student at University of Waterloo. Passionate about quality engineering, creative work, and building products that delight users. Portfolio featuring programming projects, filmmaking work, and AI agents.
-keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Programming Projects, Filmmaking, AI Agents, Hack the North, Voiceflow, Bloomberg
+keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Programming Projects, Filmmaking, AI Agents, Hack the North, Voiceflow, Bloomberg, Databricks
 ---
 <section>
     <!-- Left Column: Image -->
@@ -29,9 +29,9 @@ keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Pro
     </div>
 
     <div class="right-column">
-        <ul class="project-grid">
+        <ul class="project-grid featured-project-grid">
             {% assign programming_projects = site.projects | where: 'tag', 'programming' | sort: 'sortNumber' | reverse %}
-            {% for project in programming_projects limit:3 %}
+            {% for project in programming_projects limit:6 %}
             <li class="project-item">
                 <a href="{{ project.url }}">
                     <img src="{{ project.image_url }}" alt="{{ project.title }}">
@@ -71,12 +71,25 @@ keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Pro
 
             <div class="experience-item">
                 <div class="experience-title">
+                    <img src="/assets/img/logo/databricks.png" alt="Databricks Logo">
+                    <h2>Databricks</h2>
+                </div>
+                <h4>Software Engineer Intern - May 2026 - Present</h4>
+                <ul>
+                    <li>Designed idempotent Temporal workflows with retry, heartbeat, rollback, and failure recovery for resilient data operations.</li>
+                    <li>Drove a 70x speedup in a copy pipeline by identifying inefficiency, working across teams, and leading production rollout planning.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">
                     <img src="/assets/img/logo/bloomberg.jpg" alt="Bloomberg Logo">
                     <h2>Bloomberg</h2>
                 </div>
-                <h4>Software Engineer - Sept 2025 - Dec 2025</h4>
+                <h4>Software Engineer Intern - Sept 2025 - Dec 2025</h4>
                 <ul>
-                    <li>Designed a high-volume pricing data ingestion system driving Liquidity Analytics for Enterprise Data!</li>
+                    <li>Designed a high-volume Parquet ingestion pipeline powering pricing data for <a href="https://professional.bloomberg.com/products/risk/lqa/">Liquidity Analytics</a> in Enterprise Data.</li>
+                    <li>Only intern to ship to production, validating outputs with Jupyter-based diffing, mock testing, and production parity analysis.</li>
                 </ul>
             </div>
 
@@ -85,14 +98,16 @@ keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Pro
                     <img src="/assets/img/logo/voiceflow.png" alt="Voiceflow Logo">
                     <h2>Voiceflow</h2>
                 </div>
-                <h4>Software Engineer - Jan 2025 - April 2025</h4>
+                <h4>Runtime Software Engineer Intern - Jan 2025 - Apr 2025</h4>
                 <ul>
-                    <li>Working on backend systems and the Voiceflow AI agent runtime</li>
-                    <li>Read <a href="https://www.voiceflow.com/pathways/turbocharging-voice-agents">Turbocharging Voice Agents: Speed, Quality, and Powerful New Features</a></li>
+                    <li>Shipped real-time AI voice and audio pipeline features including answering machine detection, noise suppression, and fast ASR, reducing TTS latency by 600ms.</li>
+                    <li>Resolved 3 Sev0 incidents and 130 runtime engine tickets across microservices using websockets and message queues.</li>
+                    <li>Read <a href="https://www.voiceflow.com/pathways/turbocharging-voice-agents">Turbocharging Voice Agents: Speed, Quality, and Powerful New Features</a>.</li>
                 </ul>
-                <h4>Developer Advocate and Content Creator - Mar 2024 - Aug 2024</h4>
+                <h4>Developer Advocate and Content Creator for Growth - Mar 2024 - Aug 2024</h4>
                 <ul>
-                    <li>Made videos, wrote documentation, and ran talks</li>
+                    <li>Led the Voiceflow 2.0 <a href="https://docs.voiceflow.com/">documentation</a> revamp, improving organization, writing new articles, and helping triple docs traffic.</li>
+                    <li>Built 5 GenAI apps using Python, TypeScript, C#, and React, plus 17 demos that reached 100k+ views.</li>
                 </ul>
             </div>
 
@@ -101,88 +116,97 @@ keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Pro
                     <img src="/assets/img/logo/hack_the_north.png" alt="HTN Logo">
                     <h2>Hack the North</h2>
                 </div>
-                <h4>Backend Lead - Nov 2024 - Sept 2025 </h4>
+                <h4>Product Manager - Nov 2025 - Present</h4>
                 <ul>
-                    <li>Guiding a great team to build out cool projects!</li>
+                    <li>Managed a 13-person engineering organization, unifying frontend and backend teams for Canada's largest hackathon.</li>
+                    <li>Authored PRDs and oversaw development to ship 14+ products with high quality and on-time delivery.</li>
+                    <li>Currently executing the largest-scale hardware project ever done by a North American hackathon, under NDA.</li>
                 </ul>
-                <h4>Backend Developer - Mar 2024 - Nov 2024</h4>
+                <h4>Backend Engineering Lead - Nov 2024 - Nov 2025</h4>
                 <ul>
-                    <li>Wrote GraphQL APIs, built GenAI products, Slack bots, did on-call, and fulfilled data requests</li>
-                    <li>Read <a href="https://hackthenorth.medium.com/building-hack-the-norths-ai-goose-guide-bot-9c266ad2f808">Building Hack the North’s AI Goose Guide Bot</a></li>
+                    <li>Led and mentored 5 backend engineers through 8 products, including event gamification, scheduling tools, and hacker-facing initiatives.</li>
+                    <li>Launched <a href="https://hackthenorth.medium.com/the-complete-story-of-hack-the-norths-2025-capture-the-flag-challenge-150a486c7b1e">Capture the Flag</a>, designing hacker challenges and building algorithmic anti-cheat for 1,337+ players.</li>
+                    <li>Performed platform on-call maintenance on GCP, resolving production issues through log analysis, debugging, and patches.</li>
+                </ul>
+                <h4>Backend Software Engineer - Mar 2024 - Nov 2024</h4>
+                <ul>
+                    <li>Developed GraphQL CRUD endpoints in a TypeScript Apollo stack for authentication, kudos, buses, and event operations.</li>
+                    <li>Built and deployed <a href="https://hackthenorth.medium.com/building-hack-the-norths-ai-goose-guide-bot-9c266ad2f808">Goose Guide Bot</a>, a GenAI Slack bot used by 1,000+ participants that auto-answered 91% of questions.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-title">
-                    <img src="/assets/img/logo/waterloo_rocketry.png" alt="HTN Logo">
+                    <img src="/assets/img/logo/waterloo_rocketry.png" alt="Waterloo Rocketry Logo">
                     <h2>Waterloo Rocketry</h2>
                 </div>
                 <h4>Media Lead - Sep 2024 - Sept 2025 </h4>
                 <ul>
-                    <li>Made a movie, filmed informative vlogs, graphic design, and photography</li>
+                    <li>Created films, vlogs, graphics, and photography for rocket tests, technical updates, outreach, and team storytelling.</li>
                 </ul>
                 <h4>Software Developer - Sep 2023 - Sep 2024</h4>
                 <ul>
-                    <li>Wrote data analysis and graphing software</li>
+                    <li>Wrote data analysis and graphing software to help the team process test data and understand vehicle performance.</li>
                 </ul>
             </div>
             
             <div class="experience-item">
                 <div class="experience-title">
-                    <img src="/assets/img/logo/se_soc.png" alt="HTN Logo">
+                    <img src="/assets/img/logo/se_soc.png" alt="Software Engineering Society Logo">
                     <h2>Software Engineering Society</h2>
                 </div>
                 <h4>VP Events - Sep 2024 - Present </h4>
                 <ul>
-                    <li>Helped other people run lots of events to bring the Software Engineering community together!</li>
+                    <li>Coordinate community programming and support event teams bringing the Software Engineering cohort together.</li>
                 </ul>
                 <h4>Cohort Representative - Sep 2023 - Sep 2024</h4>
                 <ul>
-                    <li>Ran lots of events!</li>
+                    <li>Ran student events and represented cohort feedback to the Software Engineering Society.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-title">
-                    <img src="/assets/img/logo/uwaterloo.jpeg" alt="HTN Logo">
+                    <img src="/assets/img/logo/uwaterloo.jpeg" alt="University of Waterloo Logo">
                     <h2>University of Waterloo</h2>
                 </div>
                 <h4>Residence Life Don - Sep 2024 - Dec 2024</h4>
                 <ul>
-                    <li>Supported 48 first year students in Residence with programming, 1:1s, and duty</li>
+                    <li>Supported 48 first-year students in residence through programming, 1:1s, and on-duty crisis response.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-title">
-                    <img src="/assets/img/logo/tech_3_lab.png" alt="HTN Logo">
+                    <img src="/assets/img/logo/tech_3_lab.png" alt="Tech3Lab Logo">
                     <h2>Tech3Lab HEC Montréal</h2>
                 </div>
                 <h4>HCI VR Researcher - Jul 2023 - Aug 2023</h4>
                 <ul>
-                    <li>Researched the impacts of physical artifacts in VR on rehabilitation, lots of data analysis, and wrote a paper submitted to CHI 2024</li>
+                    <li>Researched the impacts of physical artifacts in VR rehabilitation, built Python/Jupyter data analysis tools, and wrote a first-author paper submitted to CHI 2024.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-title">
-                    <img src="/assets/img/logo/celeste_community.png" alt="HTN Logo">
+                    <img src="/assets/img/logo/celeste_community.png" alt="Celeste Community Logo">
                     <h2>Celeste Community</h2>
                 </div>
                 <h4>Broadcast Infrastructure Developer and Event Producer - Jan 2021 – Sept 2023</h4>
                 <ul>
-                    <li>Refactored 3,800 lines of broadcast control software, ran livestreams, and raised $40,000 for Trans Rights</li>
+                    <li>Refactored 3,800 lines of Python broadcast control software into a more resilient architecture, reducing stream interruptions by 80%.</li>
+                    <li>Produced livestream events and helped raise $40,000 for Trans Rights.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-title">
-                    <img src="/assets/img/logo/city_of_ottawa.png" alt="HTN Logo">
+                    <img src="/assets/img/logo/city_of_ottawa.png" alt="City of Ottawa Logo">
                     <h2>City of Ottawa</h2>
                 </div>
                 <h4>Swim Instructor & Lifeguard - Mar 2022 - Jun 2023 </h4>
                 <ul>
-                    <li>Instructed swimming and guarded lives</li>
+                    <li>Taught swimming lessons and lifeguarded public programs, balancing safety, instruction, and clear communication.</li>
                 </ul>
             </div>
         </div>    

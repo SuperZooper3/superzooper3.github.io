@@ -2,7 +2,7 @@
 layout: article
 tag: programming
 backlink: /programming.html
-sortNumber: 23
+sortNumber: 26
 title: Reci
 image_url: /assets/img/projects/reci.png
 ---
@@ -15,6 +15,6 @@ Reci was a project developed for CS 348 at the University of Waterloo.
 
 It was a fun fullstack app to develop in a group with my uni friends. I mostly worked on the database and backend systems, especially focused on authentication using JWTs.
 
-We hope to expand Reci into a real product that we can use day to day, because we all love cooking and would love a platform to share our work on!
+Reci ended up becoming the seed for Cookd.ca, a real social cooking app we kept building after the course. The core idea of sharing what we cook with friends grew into Cookd.ca's public feed, profiles, recipe discovery, streaks, and social cooking loops.
 
-*You look at the code and documentation on [GitHub](https://github.com/SuperZooper3/reci).*
+*You can look at the code and documentation on [GitHub](https://github.com/SuperZooper3/reci).*

@@ -1,0 +1,40 @@
+---
+layout: article
+title: Been There
+tag: programming
+image_url: /assets/img/projects/been-there/been-there-map.png
+backlink: /programming.html
+description: Been There is a live map-memory app for coloring in places you have visited, adding Polaroid photo pins, and exploring your travel history with H3 hexagons.
+sortNumber: 33
+---
+
+<p><strong>Been There</strong> is a map-memory app for filling out the places you have visited. You color in real-world areas, watch your explored map grow, and add Polaroid-style photo memories to the locations where they happened.</p>
+
+<p>The app is live in the browser at <a href="https://been-there-maps.vercel.app/">been-there-maps.vercel.app</a>, and the code is on <a href="https://github.com/SuperZooper3/been-there">GitHub</a>. The native app is currently in limited preview while we keep working through the installable iOS/Android experience.</p>
+
+<img src="/assets/img/projects/been-there/been-there-map.png" height="315" alt="Been There map of San Francisco with visited H3 cells and Polaroid photo pins"/>
+
+<p>Under the hood, Been There uses Uber's H3 hexagonal spatial index to represent where you have been. It stores fine-grained visited cells and derives larger parent hexagons at lower zoom levels, which makes it feel good whether you are looking at a neighborhood, a city, or a whole continent.</p>
+
+<img src="/assets/img/projects/been-there/been-there-region.png" height="315" alt="Been There regional map showing visited areas across the Bay Area"/>
+<img src="/assets/img/projects/been-there/been-there-world.png" height="315" alt="Been There continent-scale map showing visited areas across North America"/>
+
+<p>One of my favorite pieces is Intelligence Mode. It turns the map into a heatmap-style layer, showing overlays like when you were last somewhere, where you have been most often, and when places were first visited.</p>
+
+<img src="/assets/img/projects/been-there/been-there-intelligence.png" height="315" alt="Been There intelligence mode heatmap over San Francisco"/>
+
+<p>The app also supports photo pins. Photos can become little Polaroids on the map, and uploads with GPS metadata can place themselves automatically. It makes the map feel less like a tracker and more like a memory surface.</p>
+
+<img src="/assets/img/projects/been-there/been-there-polaroid.png" height="315" alt="Been There Polaroid photo memory opened on the map"/>
+
+<p>Technically, the project brings together Next.js, MapLibre, Stadia's OSM-based map tiles, Supabase, H3, EXIF parsing, Supercluster photo clustering, PWA support, and Capacitor work for Android/iOS. We also worked on background geolocation and native-app behavior so it can become more than a normal website while still being usable from any browser.</p>
+
+<ul>
+  <li>H3 hexagonal mapping for visited places at multiple scales</li>
+  <li>Intelligence Mode for recency, frequency, and first-visited overlays</li>
+  <li>Polaroid photo pins with EXIF-aware location placement</li>
+  <li>Open-source map rendering with MapLibre and OSM-based tiles</li>
+  <li>Capacitor, PWA, and background-location work for an installable app experience</li>
+</ul>
+
+<p><i>Try it at <a href="https://been-there-maps.vercel.app/">been-there-maps.vercel.app</a> or read the code on <a href="https://github.com/SuperZooper3/been-there">GitHub</a>.</i></p>

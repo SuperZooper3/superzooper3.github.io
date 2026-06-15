@@ -13,8 +13,9 @@ It's an advent calendar with programming puzzles released every day of advent.
 
 I'm no expert and just try and solve every puzzle in the day until they become too hard to solve in 24 hours (or however much time I allot for myself in the day).
 
-My performance from 2020 to 2024 has been:
+My performance from 2020 to 2025 has been:
 
+- [2025] 18* (I had a fun time working on the new challenge format, but ran out of time)
 - [2024] 4* :(
 - [2023] 14* Final exams :(
 - [2022] 36* (with notable performances on days 7 (406'th to get 2 stars) and day 9 (156'th to get 1 star))

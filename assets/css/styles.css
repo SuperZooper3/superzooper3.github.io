@@ -182,6 +182,10 @@ section {
     width: 100%; /* Ensure the grid container takes full width */
 }
 
+.featured-project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .project-item {
     display: flex;
     flex-direction: column;
@@ -199,6 +203,12 @@ section {
 .project-item h2 {
     margin-top: 10px;
     font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .featured-project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
 }
 
 .menu-preface {
