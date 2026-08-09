@@ -64,7 +64,8 @@ keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Pro
 <section>
     <div class="left-column">
         <h2 class="right-align-header">Experience</h2>
-        <h3 class="right-align-header"><a href="/assets/misc/Alex_Resume.pdf">Resume</a></h3>
+        <h3 class="right-align-header"><a href="/assets/misc/Alex_Resume_Product.pdf">Resume</a></h3>
+        <h3 class="right-align-header" id="software-resume-link" hidden><a href="/assets/misc/Alex_Resume.pdf">Software Resume</a></h3>
     </div>
 
     <div class="right-column">
@@ -221,3 +222,27 @@ keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Pro
         <small>Inspired by <a href="https://www.jeffgeerling.com/about">Jeff Geerling's personal site</a>.</small>
     </p>
 </footer>
+
+<script>
+    (() => {
+        const softwareResumeLink = document.getElementById('software-resume-link');
+
+        const setSoftwareResumeVisibility = (isVisible) => {
+            softwareResumeLink.hidden = !isVisible;
+        };
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Shift') {
+                setSoftwareResumeVisibility(true);
+            }
+        });
+
+        document.addEventListener('keyup', (event) => {
+            if (event.key === 'Shift') {
+                setSoftwareResumeVisibility(false);
+            }
+        });
+
+        window.addEventListener('blur', () => setSoftwareResumeVisibility(false));
+    })();
+</script>
