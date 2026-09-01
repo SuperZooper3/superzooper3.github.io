@@ -164,13 +164,23 @@ section {
 }
 
 .article-container {
+    text-align: left;
 }
 
 .article-container img {
     border-radius: 8px;
     max-height: 315px;
-    max-width: 440px;
+    max-width: min(440px, 100%);
     height: auto;
+}
+
+.article-container .article-pdf {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: clamp(480px, 70vh, 620px);
+    margin: 18px 0;
+    border: 0;
 }
 
 .project-grid {
@@ -209,6 +219,19 @@ section {
     .featured-project-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
+
+    .article-container {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .article-container iframe {
+        width: 100%;
+        max-width: 560px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
 }
 
 .menu-preface {
