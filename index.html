@@ -2,7 +2,7 @@
 layout: default
 title: Alex Aumais
 description: Software Engineering student at University of Waterloo. Passionate about quality engineering, creative work, and building products that delight users. Portfolio featuring programming projects, filmmaking work, and AI agents.
-keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Programming Projects, Filmmaking, AI Agents, Hack the North, Voiceflow, Bloomberg, Databricks
+keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Programming Projects, Filmmaking, AI Agents, Hack the North, Voiceflow, Bloomberg, Databricks, Jane Street
 ---
 <!-- Deployment refresh: 2026-07-12 after repository visibility update -->
 <section>
@@ -64,12 +64,23 @@ keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Pro
 <section>
     <div class="left-column">
         <h2 class="right-align-header">Experience</h2>
-        <h3 class="right-align-header"><a href="/assets/misc/Alex_Resume_Product.pdf">Resume</a></h3>
-        <h3 class="right-align-header" id="software-resume-link" hidden><a href="/assets/misc/Alex_Resume.pdf">Software Resume</a></h3>
+        <h3 class="right-align-header"><a href="/assets/misc/Alex_Resume.pdf">Resume</a></h3>
+        <h3 class="right-align-header" id="product-resume-link" hidden><a href="/assets/misc/Alex_Resume_Product.pdf">Product Resume</a></h3>
     </div>
 
     <div class="right-column">
         <div class="profiles-container">
+
+            <div class="experience-item">
+                <div class="experience-title">
+                    <img src="/assets/img/logo/jane_street.svg" alt="Jane Street Logo">
+                    <h2>Jane Street</h2>
+                </div>
+                <h4>Incoming Software Engineering Intern - May 2027 - Aug 2027</h4>
+                <ul>
+                    <li>Incoming Software Engineering Intern on trading desk products.</li>
+                </ul>
+            </div>
 
             <div class="experience-item">
                 <div class="experience-title">
@@ -225,24 +236,24 @@ keywords: Alex Aumais, Software Engineer, University of Waterloo, Portfolio, Pro
 
 <script>
     (() => {
-        const softwareResumeLink = document.getElementById('software-resume-link');
+        const productResumeLink = document.getElementById('product-resume-link');
 
-        const setSoftwareResumeVisibility = (isVisible) => {
-            softwareResumeLink.hidden = !isVisible;
+        const setProductResumeVisibility = (isVisible) => {
+            productResumeLink.hidden = !isVisible;
         };
 
         document.addEventListener('keydown', (event) => {
             if (event.key === 'Shift') {
-                setSoftwareResumeVisibility(true);
+                setProductResumeVisibility(true);
             }
         });
 
         document.addEventListener('keyup', (event) => {
             if (event.key === 'Shift') {
-                setSoftwareResumeVisibility(false);
+                setProductResumeVisibility(false);
             }
         });
 
-        window.addEventListener('blur', () => setSoftwareResumeVisibility(false));
+        window.addEventListener('blur', () => setProductResumeVisibility(false));
     })();
 </script>
