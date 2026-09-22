@@ -11,6 +11,8 @@ date: 2026-08-22
 
 <p>In 2026, I spoke at Hackcon, a conference for hackathon organizers with roughly 300 attendees. I gave a 30-minute talk called <i>How to Execute on Crazy Ideas Well</i>, drawing on three years of experience as a backend developer, engineering lead, and product manager at Hack the North.</p>
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fJ_q16hr__I" title="How to Execute on Crazy Ideas Well - Hackcon 2026 talk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <img src="/assets/img/projects/hackcon/hackcon-introduction.jpg" height="315" alt="Alex Aumais introducing himself and his Hack the North experience onstage at Hackcon 2026"/>
 
 <h2>How to execute on crazy ideas well</h2>
