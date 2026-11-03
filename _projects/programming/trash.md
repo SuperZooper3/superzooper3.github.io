@@ -9,12 +9,12 @@ image_url: /assets/img/projects/trash.png
 
 The Trash Turtle is a game I made with two friends at the [Nuit du C0de 2023](https://www.nuitducode.net/) Hackathons for highschool students.
 
-{% include game-player.html id="trash" title="The Trash Turtle" url="https://superzooper3.github.io/TheTrashTurtle/" %}
-
 We made the game in 6 hours with all of our own ideas, programming, and art. It's built on top of the pyxel game engine and is programmed in python.
 
 This year the theme was "bigger is better", so we thought the turtle could have a trash bag that got bigger and bigger as it collected litter from it's beach.
 
 ![The Trash Turtle gameplay](/assets/img/projects/trash.png)
+
+{% include game-player.html id="trash" title="The Trash Turtle" url="https://superzooper3.github.io/TheTrashTurtle/" %}
 
 *You can find the code and documentation on [GitHub](https://github.com/SuperZooper3/TheTrashTurtle).*
