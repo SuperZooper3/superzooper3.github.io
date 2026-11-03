@@ -1,0 +1,18 @@
+<div class="game-launcher" data-game-launcher>
+  <button class="game-play-button" type="button" aria-expanded="false" aria-controls="{{ include.id }}-player">
+    <span class="game-play-icon" aria-hidden="true">&#9654;</span>
+    <span>
+      <span class="game-play-title">Play {{ include.title }}</span>
+      <span class="game-play-subtitle">Right here in your browser &middot; No installation</span>
+    </span>
+  </button>
+  <p class="game-play-note">
+    Keyboard required &middot;
+    <a href="{{ include.url }}" target="_blank" rel="noopener">Open game in a new tab &#8599;</a>
+  </p>
+  <noscript><p>Use the link above to play the game.</p></noscript>
+  <div class="game-player" id="{{ include.id }}-player" hidden>
+    <iframe data-src="{{ include.url }}" title="{{ include.title }} browser game" allow="autoplay; fullscreen"></iframe>
+  </div>
+</div>
+<script src="{{ '/assets/js/game-player.js' | relative_url }}" defer></script>

@@ -106,7 +106,8 @@ section {
     }
 
     .title-name {
-        text-align: center; 
+        text-align: center;
+        font-size: clamp(2rem, 7vw, 3.5rem);
     }
 
     .nav-item {
@@ -270,4 +271,72 @@ ul {
 
 li {
     margin-left: 0; /* Ensures the text aligns correctly with the bullets */
+}
+
+/* Browser games on project pages */
+.game-launcher {
+    margin: 24px 0;
+}
+
+.game-play-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    max-width: 560px;
+    padding: 20px 24px;
+    border: 1px solid #55c2e8;
+    border-radius: 8px;
+    background: #1aa1d2;
+    color: #06262c;
+    text-align: left;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.game-play-button:hover {
+    background: #55c2e8;
+}
+
+.game-play-button:focus-visible {
+    outline: 3px solid #efefef;
+    outline-offset: 4px;
+}
+
+.game-play-icon {
+    flex-shrink: 0;
+    font-size: 1.8rem;
+}
+
+.game-play-title {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.game-play-subtitle {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.9rem;
+}
+
+.game-play-note {
+    color: #d7d7d7;
+    font-size: 0.9rem;
+}
+
+.game-launcher [hidden] {
+    display: none;
+}
+
+.article-container .game-player iframe {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 900px;
+    aspect-ratio: auto;
+    margin-top: 16px;
+    border: 1px solid #464646;
+    border-radius: 8px;
+    background: #0a2f36;
 }
