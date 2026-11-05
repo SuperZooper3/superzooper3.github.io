@@ -31,7 +31,7 @@
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}">
     <meta property="og:title" content="{{ page_title }}">
     <meta property="og:description" content="{{ meta_description }}">
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{% if page.image_url %}{{ page.image_url }}{% else %}/assets/img/headshot.png{% endif %}">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{% if page.image_url %}{{ page.image_url }}{% else %}/assets/img/headshot.webp{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
     
     <!-- Twitter Card -->
@@ -39,7 +39,7 @@
     <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}">
     <meta name="twitter:title" content="{{ page_title }}">
     <meta name="twitter:description" content="{{ meta_description }}">
-    <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{% if page.image_url %}{{ page.image_url }}{% else %}/assets/img/headshot.png{% endif %}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{% if page.image_url %}{{ page.image_url }}{% else %}/assets/img/headshot.webp{% endif %}">
     {% if site.author.twitter %}
     <meta name="twitter:creator" content="@{{ site.author.twitter }}">
     {% endif %}
@@ -59,7 +59,7 @@
       {% if page.layout == 'article' %}
       "headline": "{{ page.title }}",
       "description": "{{ meta_description }}",
-      "image": "{{ site.url }}{{ site.baseurl }}{% if page.image_url %}{{ page.image_url }}{% else %}/assets/img/headshot.png{% endif %}",
+      "image": "{{ site.url }}{{ site.baseurl }}{% if page.image_url %}{{ page.image_url }}{% else %}/assets/img/headshot.webp{% endif %}",
       "author": {
         "@type": "Person",
         "name": "{{ site.author.name }}"
@@ -73,7 +73,7 @@
       {% else %}
       "name": "{{ site.author.name }}",
       "url": "{{ site.url }}{{ site.baseurl }}",
-      "image": "{{ site.url }}{{ site.baseurl }}/assets/img/headshot.png",
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/img/headshot.webp",
       "jobTitle": "Software Engineer",
       "worksFor": {
         "@type": "Organization",

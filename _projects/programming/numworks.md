@@ -2,7 +2,7 @@
 layout: article
 title: Numworks Games
 tag: programming
-image_url: /assets/img/projects/tetris.png
+image_url: /assets/img/projects/tetris.webp
 backlink: /programming.html
 sortNumber: 5
 ---
@@ -15,6 +15,6 @@ I made three games (Tetris, Minesweeper and Dance) as well as a fun way to encod
 
 These games all run on the stock calculator using the python app without any jailbreaking.
 
-![Tetris](/assets/img/projects/tetris.png)
+![Tetris](/assets/img/projects/tetris.webp)
 
 *You can find this collection of games and tools as well as a more thorough documentation and showcase on [GitHub](https://github.com/SuperZooper3/Numworks-Games).*

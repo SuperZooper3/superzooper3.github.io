@@ -3,7 +3,7 @@ layout: article
 title: ChatGPT Gender Study
 tag: other
 backlink: /other.html
-image_url: /assets/img/projects/other/chatfig3.png
+image_url: /assets/img/projects/other/chatfig3.webp
 sortNumber: 5
 ---
 
@@ -21,7 +21,7 @@ OpenAI’s ChatGPT is often anthropomorphized by its users, who may attribute ge
 
 Here are the figures demonstrating the results
 
-![Screenshots from the project](/assets/img/projects/other/chatfig2.png)
-![Screenshots from the project](/assets/img/projects/other/chatfig3.png)
+![Screenshots from the project](/assets/img/projects/other/chatfig2.webp)
+![Screenshots from the project](/assets/img/projects/other/chatfig3.webp)
 
 *You can find the report [here](/assets/misc/What%20gender%20do%20you%20associate%20with%20ChatGPT_%20-%20Report.pdf), and the dataset as well as the data analysis code on [GitHub](https://github.com/SuperZooper3/ChatGPT-Gender-Study).*

@@ -2,7 +2,7 @@
 layout: article
 title: QOI Try Image Compression
 tag: programming
-image_url: /assets/img/projects/qoi.png
+image_url: /assets/img/projects/qoi.webp
 backlink: /programming.html
 sortNumber: 6
 ---

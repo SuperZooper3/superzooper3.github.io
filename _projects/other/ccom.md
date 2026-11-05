@@ -3,7 +3,7 @@ layout: article
 title: Celeste Community
 tag: other
 backlink: /other.html
-image_url: /assets/img/projects/other/ccom2.png
+image_url: /assets/img/projects/other/ccom2.webp
 sortNumber: 1
 ---
 
@@ -15,6 +15,6 @@ As showcased on [this page of my portfolio](/projects/programming/ccom/), I help
 
 I also gained a lot of experience in project management, community relations and growth (through managing our [YouTube channel](https://www.youtube.com/@CelesteCommunity)), staff management and training and working with professionalism.
 
-![Screenshots of the content](/assets/img/projects/other/ccom1.png)
-![Screenshots of the content](/assets/img/projects/other/ccom2.png)
-![Screenshots of the content](/assets/img/projects/other/ccom3.png)
+![Screenshots of the content](/assets/img/projects/other/ccom1.webp)
+![Screenshots of the content](/assets/img/projects/other/ccom2.webp)
+![Screenshots of the content](/assets/img/projects/other/ccom3.webp)

@@ -4,7 +4,7 @@ tag: programming
 backlink: /programming.html
 sortNumber: 10
 title: GrowyGardens
-image_url: /assets/img/projects/growy.png
+image_url: /assets/img/projects/growy.webp
 ---
 
 GrowyGardens was a game I made with two friends at the [Nuit du C0de 2022](https://www.nuitducode.net/) Hackathons for high school students.
@@ -13,7 +13,7 @@ We made the game in 6 hours with all of our own ideas, programming, and art. It'
 
 The game won the first prize for grade 11 students out of the entire national and international french lycée network.
 
-![Growy Gardens gameplay](/assets/img/projects/growy.png)
+![Growy Gardens gameplay](/assets/img/projects/growy.webp)
 
 {% include game-player.html id="growy" title="Growy Gardens" url="https://superzooper3.github.io/GrowyGardens/" %}
 

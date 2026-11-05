@@ -2,7 +2,7 @@
 layout: article
 title: AstroSwap
 tag: programming
-image_url: /assets/img/projects/astro.png
+image_url: /assets/img/projects/astro.webp
 backlink: /programming.html
 sortNumber: 4
 ---
@@ -13,7 +13,7 @@ It was an interesting project because it involved interactions between multiple 
 
 I developed the entire smart contract portion of the project with two contracts as exchanges and factories.
 
-![Astroswap logo](/assets/img/projects/astro.png)
+![Astroswap logo](/assets/img/projects/astro.webp)
 
 Unfortunately, I abandoned the project in mid 2022 from lack of motivation to work on the much more complex user interface portion of the project. Nonetheless, it was still very fun to lay out the project and program the contracts and I learned a lot.
 

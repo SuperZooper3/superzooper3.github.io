@@ -3,7 +3,7 @@ layout: article
 title: My livestream
 tag: media
 backlink: /media.html
-image_url: /assets/img/projects/media/stream.png
+image_url: /assets/img/projects/media/stream.webp
 sortNumber: 1
 ---
 
@@ -17,4 +17,4 @@ I've since mostly retired from streaming, but stay in touch with many people fro
 
 My proudest achievement was getting a sub 30 minute time in the Celeste Any% speedrun. You can find the clip for that [here](https://clips.twitch.tv/SlipperySplendidMushroomKreygasm-Pxae31tiWhOYIp9A).
 
-![Screenshots of the content](/assets/img/projects/media/stream.png)
+![Screenshots of the content](/assets/img/projects/media/stream.webp)

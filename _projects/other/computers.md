@@ -20,7 +20,7 @@ Some specs were:
 - 256 GB Sata SSD
 - 3 TB Hard Drive
 
-![Photo of the computer](/assets/img/projects/other/pc0.png)
+![Photo of the computer](/assets/img/projects/other/pc0.webp)
 
 In 2022, I disassembled that computer and rebuilt a new one based off some of its parts for my sister.
 

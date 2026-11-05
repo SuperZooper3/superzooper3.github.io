@@ -4,7 +4,7 @@ tag: programming
 backlink: /programming.html
 sortNumber: 12
 title: Advent of Code
-image_url: /assets/img/projects/aoc.png
+image_url: /assets/img/projects/aoc.webp
 ---
 
 I've participated in the [Advent of Code](https://adventofcode.com/) since 2020.

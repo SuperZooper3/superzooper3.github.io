@@ -3,7 +3,7 @@ layout: article
 title: FastTag - Walmart Canada
 tag: other
 backlink: /other.html
-image_url: /assets/img/projects/other/walmart.png
+image_url: /assets/img/projects/other/walmart.webp
 sortNumber: 3
 ---
 
@@ -11,7 +11,7 @@ I had the opportunity to do a consulting style project for Walmart Canada as par
 
 The proposal we pitched involved using RFID technology in their stores to make checkouts much more efficient, reduce theft and increase inventory accuracy.
 
-![Screenshots from the project](/assets/img/projects/other/walmart.png)
+![Screenshots from the project](/assets/img/projects/other/walmart.webp)
 
 During the project, my team and I did a ton of research, outreach to industry professionals. I personally really enjoyed thinking about the different limits and consequences of implementing our solution, and especially the case studies on how other companies implemented similar solutions.
 

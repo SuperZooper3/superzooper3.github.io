@@ -2,7 +2,7 @@
 layout: article
 title: Project Carlito - Tech3Lab
 tag: programming
-image_url: /assets/img/projects/carlito/cue2.png
+image_url: /assets/img/projects/carlito/cue2.webp
 backlink: /programming.html
 sortNumber: 13
 ---
@@ -13,10 +13,10 @@ I contributed to this project as a summer intern, but took a very general role w
 
 Our goal is write a feasibility study paper and publish it at the CHI 2024 conference. This is still a WIP, so this post will be updated soon!
 
-![Cue 1](/assets/img/projects/carlito/cue1.png)
-![Cue 2](/assets/img/projects/carlito/cue2.png)
-![Drawing](/assets/img/projects/carlito/drawing.png)
-![EEG](/assets/img/projects/carlito/eeg.png)
-![Fig1](/assets/img/projects/carlito/fig1.png)
-![Fig2](/assets/img/projects/carlito/fig2.png)
-![Pretest](/assets/img/projects/carlito/pretest.png)
+![Cue 1](/assets/img/projects/carlito/cue1.webp)
+![Cue 2](/assets/img/projects/carlito/cue2.webp)
+![Drawing](/assets/img/projects/carlito/drawing.webp)
+![EEG](/assets/img/projects/carlito/eeg.webp)
+![Fig1](/assets/img/projects/carlito/fig1.webp)
+![Fig2](/assets/img/projects/carlito/fig2.webp)
+![Pretest](/assets/img/projects/carlito/pretest.webp)
